@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>News Aggregator</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit.html">Submit News</a></li>
+                <li id="profile-link" style="display: none;"><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="news-article">
+            <h2 id="article-title">Article Title</h2>
+            <p id="article-summary">Summary of the article...</p>
+            <a id="article-link" href="#" target="_blank">Read more</a>
+
+            <section id="voting">
+                <button id="upvote">Upvote</button>
+                <button id="downvote">Downvote</button>
+            </section>
+
+            <section id="comments">
+                <h3>Comments</h3>
+                <form id="comment-form">
+                    <textarea id="comment-text" rows="4" placeholder="Add a comment..." required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+                <div id="comment-list">
+                    <!-- Comments will be dynamically inserted here -->
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 News Aggregator</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

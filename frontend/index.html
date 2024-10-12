@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>News Aggregator</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit.html">Submit News</a></li>
+                <li id="profile-link" style="display: none;"><a href="profile.html">Profile</a></li> <!-- Profile link, hidden by default -->
+                <li id="login-link"><a href="login.html">Login/Register</a></li> <!-- Login/Register link -->
+                <li id="logout-link" style="display: none;"><a href="#">Logout</a></li> <!-- Logout link, hidden by default -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-filter">
+            <input type="text" id="search" placeholder="Search news....">
+            <select id="filter">
+                <option value="" disabled selected>Select a category</option>
+                <option value="technology">Technology</option>
+                <option value="education">Education</option>
+                <option value="politics">Politics</option>
+                <option value="sports">Sports</option>
+            </select>
+        </section>
+        <section id="news-feed">
+            <h2>Latest News</h2>
+            <div id="articles-container">
+                <!-- Articles will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 News Aggregator</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
