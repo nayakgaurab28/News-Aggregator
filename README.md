@@ -11,6 +11,13 @@ This is a crowdsourced News Aggregator web application where users can submit ar
 - **Pagination**: View articles with pagination.
 - **JWT Protected Routes**: Ensures only authenticated users can access certain features.
 
+## Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT)
+
 ## Project Structure
 
 ```bash
